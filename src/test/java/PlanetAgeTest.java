@@ -16,7 +16,11 @@ public class PlanetAgeTest {
     }
 
     @Test
-    public void mercuryAge() {
-        assertEquals(0.24, PlanetAge.mercuryAge(31557600), 0.1);
+    public void earthAgeTwo() {
+        assertEquals(31.0, PlanetAge.earthAge(1000000000), 0.1);
     }
+//    @Test
+//    public void mercuryAge() {
+//        assertEquals(0.24, PlanetAge.mercuryAge(31557600), 0.1);
+//    }
 }
