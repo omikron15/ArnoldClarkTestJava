@@ -17,7 +17,7 @@ public class PlanetAgeTest {
 
     @Test
     public void earthAgeTwo() {
-        assertEquals(31.0, PlanetAge.earthAge(1000000000), 0.1);
+        assertEquals(31.7, PlanetAge.earthAge(1000000000), 0.1);
     }
 
     @Test
