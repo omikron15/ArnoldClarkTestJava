@@ -1,27 +1,24 @@
 public class PlanetAge {
 
 //Method converts seconds in to earth years.
-    public static int earthAge(int seconds){
+
+    public static double calculateDays(int seconds){
         double mins = seconds / 60;
         double hours = mins / 60;
         double days = hours/24;
-        double years = days/365.25;
-
-        int result = (int) years;
-
-        return result;
+        return days;
     }
 
-    public static int mercuryAge(int seconds){
-        double mins = seconds / 60;
-        double hours = mins / 60;
-        double days = hours/24;
-        double years = days/88;
+    public static double earthAge(int seconds){
+        double days = calculateDays(seconds);
+        double years = days/365.25;
+        return years;
+    }
 
-        int result = (int) years;
-
-        return result;
-
+    public static double mercuryAge(int seconds){
+        double days = calculateDays(seconds);
+        double years = days/(0.2408467*365.25);
+        return years;
     }
 
 
